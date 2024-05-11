@@ -219,10 +219,10 @@ def model3(G: nx.Graph, c_current: float, cluster: float, allowed_error: float,
 
                 if current_links:
                     link_to_remove = random.choice(current_links) # Randomly select one link to remove
-                    degree_of_removed_node = G.degree(link_to_remove)  # Degree of the node at the other end of the removed link
+                    degree_of_removed_node = G.degree(link_to_remove) - 1 # Degree of the node at the other end of the removed link - 1
                     G.remove_edge(node, link_to_remove) # Remove the selected link
 
-                # Filter potential new links to nodes with a degree matching that of the removed node
+                # Filter potential new links to nodes with a degree matching that of the removed node - 1 to maintain the degree distribution
                 possible_new_links = [n for n in node_list if G.degree(n) == degree_of_removed_node and n != node]
 
                 # Samples nodes for potential connection if there are more than enough candidates

@@ -99,8 +99,8 @@ def digest_network(network_csv: str, n: int) -> Tuple[nx.Graph, float]:
 
 def analyze_graph(G: nx.Graph):
     """
-    Analyzes various properties of the given graph, including its diameter, clustering coefficient,
-    and degree distribution.
+    Analyzes and prints various properties of the given graph, including its diameter, clustering coefficient,
+    assortativity coefficient, and degree distribution.
 
     :param G: A NetworkX graph object.
     """

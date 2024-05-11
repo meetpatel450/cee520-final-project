@@ -1,0 +1,10 @@
+n: 74
+c: 0.2869
+Average clustering coefficient of EM: 0.036936936936936934
+Function execution failed due to timeout.
+Total execution time: 3599.96 seconds
+Using network_csvs/Eastern-Massachusetts.csv in Model 3 took 52230 iterations to reach c = 0.08660446160446163
+Graph is not connected; diameter of the giant component will be calculated.
+Diameter of the giant component: 9
+Average Clustering Coefficient: 0.04777992277992278
+Degree Assortativity Coefficient: -0.3342166101099135

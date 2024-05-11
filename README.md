@@ -1,4 +1,13 @@
-# cee520-final-project
+# Fitting Random Networks to Road Networks Using Greedy Algorithms
 
+This is the repository for the CEE520 final project of Amit Ofek and Meet Patel, submitted in May of 2024.
 
-This project was done in Python 3.8.12 64-bit
+This project was created and run in both Google Colab as well as Python 3.8.12 64-bit in a standard environment in VSCode. 
+
+The key components produced are "models.py" and "utilities.py"; in order to run the code, please refer to "example.py" and have a designated output file ready (if you're unsure, make an empty file named "output.txt" and modify "example.py" accordingly). Alternatively, you may reference the .ipynb files in the "example_notebooks" folder for use within a Jupyter notebook; if you wish to use those notebooks directly in this code repository, move the desired notebook into the "network_csvs" folder before executing code blocks. If you encounter errors when attempting to run "example.py", please try running code in a file from "example_notebooks"; if you still encounter issues, please reach out to me as these all worked properly on my laptop and in my Google Colab as of submission, since the "example_notebooks" folder also contains the outputs and data used in the associated paper submitted with this project. To modify the allotted runtime for models, please modify the values in the respective function in "models.py".
+
+There are a number of other .ipynb files available in the "old_notebooks" folder, showing the iterative process of our project. Furthermore, different notebooks were used in order to concurrently run code on one machine. The notebooks in this folder have not had their code cleaned up as they are for archival purposes, so please reference the code in "models.py" and "utilities.py". 
+
+The "network_csvs" folder contains .csv files composed from network data acquired from https://github.com/bstabler/TransportationNetworks. In order to attain these .csv files yourself, download the desired network data from the Transportation Networks GitHub repository, and modify and run the "parsing networks in Python.ipynb" file with them in Google Colab after connecting it to your Google Drive. If you'd like a brief overview of the content of the networks we used in this project, please look at "Preliminary_Data_Analysis.ipynb" in this folder.
+
+GENERATIVE AI DISCLAIMER: This project made use of ChatGPT for assistance in generating code as well as discussing and going through concepts (which it generally performed well at, though sometimes needed some assistance or intervention to fix mistakes). Additionally, it was used to aid in adding type hints as well as comments to the code. ChatGPT was not used in any of the actual writing of the paper, and it was only used in accordance with CEE520 guidelines. Links to what ChatGPT logs were made available for sharing can be found in the file "chatgpt_logs.txt". If you have any concerns, please reach out to us, and we'd be happy to show you our ChatGPT logs over a video call or in person since a select few ChatGPT logs provided errors when attempting to create a link for sharing.
